@@ -35,6 +35,7 @@ https://bufeks.github.io/gnt/
 | v2 | 2026-06-05 | `versions/index-v2-20260605.html` | 昼夜セクションの画像をギャラリー化＋看板照明（Sign Lighting）ブロックを内装に追加 |
 | v3 | 2026-06-05 | `versions/index-v3-20260605.html` | 内装コンセプトを2案比較に（案A STREET DINER／案B CLEAN SIMPLE × JAPANESE CULTURE） |
 | v4 | 2026-06-05 | `versions/index-v4-20260605.html` | 案Bを「昼と夜の表情」の後ろへ移動＋内容を拡充（考え方リスト・追加写真・主素材） |
+| v5 | 2026-06-05 | `versions/index-v5-20260605.html` | フッターにZIP一括ダウンロードリンク（オフライン閲覧用）を追加 |
 
 > 版を更新したら `versions/index-vN-YYYYMMDD.html` として新しいファイルを追加し、この表に1行足してください。git の履歴でも全変更を追えます。
 
