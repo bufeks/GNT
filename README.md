@@ -27,11 +27,19 @@ https://bufeks.github.io/gnt/
 
 公開ページの各バージョンを `versions/` に保存しています。`index.html` は常に最新版で、過去の版に戻したいときは `versions/` のファイルを `index.html` に戻します。
 
+### ページ（index.html）
+
 | 版 | 日付 | ファイル | 備考 |
 |----|------|----------|------|
 | v1 | 2026-06-05 | `versions/index-v1-20260605.html` | ベース版（GOOD NEIGHBORS TOKYO — 縁を、ひらく。） |
 
 > 版を更新したら `versions/index-vN-YYYYMMDD.html` として新しいファイルを追加し、この表に1行足してください。git の履歴でも全変更を追えます。
+
+### 図面など素材の旧版
+
+| 内容 | ファイル | 備考 |
+|------|----------|------|
+| 平面図（差し替え前） | `versions/floor_plan_pre-0605.png` | 現行 `assets/floor_plan_0604.png` に差し替える前の版 |
 
 ## 編集方法
 
