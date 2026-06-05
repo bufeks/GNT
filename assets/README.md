@@ -1,27 +1,26 @@
 # assets — 画像・PDF素材
 
-企画書（`index.html`）やブリーフ（`source/brief.md`）で使う画像・PDFを置く場所です。
+企画書（`index.html`）で使う画像・PDFを置く場所です。
 
-## 置き方
+## 置き方（重要）
+
+`index.html` は画像を **`assets/` 直下** で参照しています（例：`assets/asset_engawa_bench.jpg`）。
+そのため **画像は `assets/` の直下に置いてください**（サブフォルダに入れると参照が切れます）。
 
 ```
 assets/
-├── images/   # 写真・スクショ・パース画像（jpg / png / webp）
-└── pdf/       # 配布・参照用PDF
+├── asset_xxx.jpg      # 企画書で使う画像はすべてここ（直下）
+├── engawa_ref_xx.jpg
+├── floor_plan_0604.png
+└── pdf/                # PDFのみサブフォルダにまとめる
 ```
 
-- ファイル名は **半角英数・ハイフン** 推奨（日本語名でも動きますが、URL化の安全性のため英数を推奨）。
-- HTML からは相対パスで参照します。例：`<img src="assets/images/facade.jpg">`
+- ファイル名は **半角英数・ハイフン/アンダースコア** 推奨。
+- HTML からの参照例：`<img src="assets/asset_engawa_bench.jpg">`
 
-## ブリーフで参照している素材（アップ待ち）
+## よくある間違い
 
-`source/brief.md` で言及されている資料です。アップしていただけると、企画書に反映できます。
+- ❌ `assets/images/xxx.jpg` に置く → HTMLは `assets/xxx.jpg` を見るため表示されません。
+- ✅ `assets/xxx.jpg` に置く。
 
-| 資料 | 内容 | 推奨ファイル名（例） | 状態 |
-|------|------|----------------------|------|
-| 資料B | GNT_ALL_251201_v2（過去コンセプト資料） | `assets/pdf/gnt-all-v2.pdf` | 未アップ |
-| 資料C | ビギビル 1F商業イメージパース | `assets/pdf/facade-perspective.pdf` または `assets/images/facade-perspective.jpg` | 未アップ |
-| 資料D | 平面構想スクショ | `assets/images/floor-plan.png` | 未アップ |
-| ロゴ | GOOD NEIGHBORS TOKYO ロゴ | `assets/images/logo.svg` / `logo.png` | 未アップ |
-
-> ファイル名はあくまで例です。実際の名前で置いていただければ、こちらでHTMLの参照を合わせます。
+> GitHub の Web からアップする場合は、`assets` フォルダを開いた状態で **Add file → Upload files** してください。
