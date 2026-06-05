@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>GNT｜中目黒 新店 開業計画</title>
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --panel: #ffffff;
+      --ink: #1f1d1a;
+      --muted: #6b6660;
+      --line: #e7e3dc;
+      --accent: #2f5d50;
+      --accent-soft: #eef3f1;
+      --todo: #b06a00;
+      --todo-bg: #fbf1e0;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); }
+
+    header.hero {
+      background: linear-gradient(160deg, #2f5d50 0%, #244a40 100%);
+      color: #fff;
+      padding: 64px 24px 56px;
+      text-align: center;
+    }
+    header.hero .kicker {
+      letter-spacing: 0.28em;
+      font-size: 13px;
+      opacity: 0.85;
+      margin: 0 0 14px;
+    }
+    header.hero h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    header.hero p.sub {
+      margin: 16px auto 0;
+      max-width: 640px;
+      opacity: 0.9;
+      font-size: 16px;
+    }
+
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    nav.toc {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(250, 249, 247, 0.92);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav.toc ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      margin: 0;
+      padding: 12px 20px;
+      max-width: 880px;
+      margin-inline: auto;
+      font-size: 14px;
+    }
+    nav.toc a { color: var(--muted); text-decoration: none; }
+    nav.toc a:hover { color: var(--accent); }
+
+    section.card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px 28px 22px;
+      margin: 28px 0;
+      scroll-margin-top: 72px;
+    }
+    section.card > h2 {
+      margin: 0 0 4px;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    section.card > h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px; height: 30px;
+      border-radius: 8px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+      flex: none;
+    }
+    section.card > p.lead {
+      color: var(--muted);
+      margin: 4px 0 18px;
+      font-size: 14px;
+    }
+
+    table.kv {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 6px 0 4px;
+    }
+    table.kv th, table.kv td {
+      text-align: left;
+      vertical-align: top;
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--line);
+      font-size: 15px;
+    }
+    table.kv th {
+      width: 34%;
+      color: var(--muted);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .todo {
+      display: inline-block;
+      background: var(--todo-bg);
+      color: var(--todo);
+      border-radius: 6px;
+      padding: 1px 8px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 40px 20px 60px;
+    }
+
+    @media (max-width: 560px) {
+      table.kv th { width: 42%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <p class="kicker">GOOD NEIGHBORS TOKYO</p>
+    <h1>中目黒 新店 開業計画</h1>
+    <p class="sub">自社飲食店の開業に向けた計画と進捗をまとめたページです。内容は随時更新します。</p>
+  </header>
+
+  <nav class="toc">
+    <ul>
+      <li><a href="#overview">概要</a></li>
+      <li><a href="#concept">コンセプト</a></li>
+      <li><a href="#location">物件・立地</a></li>
+      <li><a href="#menu">メニュー</a></li>
+      <li><a href="#budget">収支・資金</a></li>
+      <li><a href="#schedule">スケジュール</a></li>
+      <li><a href="#team">体制・関係者</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap">
+
+    <section class="card" id="overview">
+      <h2><span class="num">01</span>概要</h2>
+      <p class="lead">プロジェクトの基本情報。まず埋めると全体像が共有しやすくなります。</p>
+      <table class="kv">
+        <tr><th>店舗名（仮）</th><td><span class="todo">未定 / 記入予定</span></td></tr>
+        <tr><th>業態</th><td><span class="todo">記入予定</span>（例：カフェ／ビストロ／バー 等）</td></tr>
+        <tr><th>エリア</th><td>東京・中目黒</td></tr>
+        <tr><th>想定客単価</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>席数</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>目標オープン時期</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>事業主体</th><td>Good Neighbors Tokyo（自社）</td></tr>
+      </table>
+    </section>
+
+    <section class="card" id="concept">
+      <h2><span class="num">02</span>コンセプト</h2>
+      <p class="lead">どんな店か。誰に・何を・どんな体験を届けるか。</p>
+      <table class="kv">
+        <tr><th>コンセプト一言</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>ターゲット客層</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>提供価値・差別化</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>参考・ベンチマーク</th><td><span class="todo">記入予定</span></td></tr>
+      </table>
+    </section>
+
+    <section class="card" id="location">
+      <h2><span class="num">03</span>物件・立地</h2>
+      <p class="lead">中目黒の物件情報・契約条件など。</p>
+      <table class="kv">
+        <tr><th>所在地</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>面積 / 坪数</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>賃料 / 共益費</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>契約条件（保証金・期間等）</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>居抜き / スケルトン</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>状況・備考</th><td><span class="todo">記入予定</span></td></tr>
+      </table>
+    </section>
+
+    <section class="card" id="menu">
+      <h2><span class="num">04</span>メニュー</h2>
+      <p class="lead">提供内容・価格帯の方向性。</p>
+      <table class="kv">
+        <tr><th>フード方向性</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>ドリンク方向性</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>価格帯</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>看板メニュー候補</th><td><span class="todo">記入予定</span></td></tr>
+      </table>
+    </section>
+
+    <section class="card" id="budget">
+      <h2><span class="num">05</span>収支・資金計画</h2>
+      <p class="lead">初期投資・売上計画・資金調達の概要。</p>
+      <table class="kv">
+        <tr><th>初期投資（概算）</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>月間売上目標</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>主要コスト（原価率・人件費・家賃）</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>資金調達方法</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>損益分岐の目安</th><td><span class="todo">記入予定</span></td></tr>
+      </table>
+    </section>
+
+    <section class="card" id="schedule">
+      <h2><span class="num">06</span>スケジュール</h2>
+      <p class="lead">物件契約からオープンまでの主要マイルストーン。</p>
+      <table class="kv">
+        <tr><th>物件契約</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>設計・内装</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>許認可申請（飲食店営業許可 等）</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>採用・研修</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>プレオープン</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>グランドオープン</th><td><span class="todo">記入予定</span></td></tr>
+      </table>
+    </section>
+
+    <section class="card" id="team">
+      <h2><span class="num">07</span>体制・関係者</h2>
+      <p class="lead">プロジェクトに関わるメンバーと役割。</p>
+      <table class="kv">
+        <tr><th>オーナー / 責任者</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>店長候補</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>設計・内装</th><td><span class="todo">記入予定</span></td></tr>
+        <tr><th>その他パートナー</th><td><span class="todo">記入予定</span></td></tr>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    Good Neighbors Tokyo ／ 中目黒 新店 開業計画<br />
+    最終更新：<span class="todo">更新日を記入</span>
+  </footer>
+</body>
+</html>
