@@ -390,8 +390,8 @@
   .chip .name { font-size: 11px; color: var(--ink); margin-top: 1px; }
 
   /* ---------- Moodboard ---------- */
-  .moodboard { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 120px; gap: 10px; margin: 20px 0; }
-  .mb { overflow: hidden; border-radius: 4px; position: relative; }
+  .moodboard { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0; }
+  .mb { aspect-ratio: 4 / 3; overflow: hidden; border-radius: 4px; position: relative; }
   .mb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
   .mb:hover img { transform: scale(1.04); }
   .mb .mb-tag {
@@ -401,12 +401,6 @@
     text-shadow: 0 1px 6px rgba(0,0,0,0.7);
     font-weight: 500;
   }
-  .mb-a { grid-column: span 5; grid-row: span 3; }
-  .mb-b { grid-column: span 4; grid-row: span 2; }
-  .mb-c { grid-column: span 3; grid-row: span 2; }
-  .mb-d { grid-column: span 4; grid-row: span 2; }
-  .mb-e { grid-column: span 3; grid-row: span 2; }
-  .mb-f { grid-column: span 12; grid-row: span 2; }
 
   /* ---------- Day / Night ---------- */
   .daynight { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -563,8 +557,8 @@
     .op-flow { flex-direction: column; }
     .op-step + .op-step { margin-left: 0; margin-top: -1px; }
     .bleed { height: 56vh; min-height: 360px; }
-    .moodboard, .goods-grid { grid-auto-rows: 90px; gap: 8px; }
-    .mb-a, .mb-b, .mb-c, .mb-d, .mb-e, .mb-f, .mb-g,
+    .goods-grid { grid-auto-rows: 90px; gap: 8px; }
+    .moodboard { grid-template-columns: repeat(2, 1fr); gap: 8px; }
     .gd-a, .gd-b, .gd-c, .gd-d, .gd-e, .gd-f, .gd-g { grid-column: span 6; grid-row: span 2; }
   }
   @media (max-width: 600px) {
@@ -660,7 +654,7 @@
       <h4>Six Pillars ／ GNTを支える6つの要素</h4>
       <div class="grid-6" style="margin-top:14px;">
         <div>
-          <div class="vblock r-4-3"><img src="assets/asset_engawa_seamless.jpg" alt=""><span class="vtag">Engawa</span></div>
+          <div class="vblock r-4-3"><img src="assets/asset_engawa_modern.jpg" alt=""><span class="vtag">Engawa</span></div>
           <h4 style="margin-top:12px;">01 ／ ENGAWA</h4>
           <p style="font-size:12.5px;">街と店がシームレスにつながる、現代版の縁側。</p>
         </div>
@@ -670,12 +664,12 @@
           <p style="font-size:12.5px;">日本茶を加圧抽出で。香り・色・動きを見せる。</p>
         </div>
         <div>
-          <div class="vblock r-4-3"><img src="assets/asset_food_tacos_fresh.jpg" alt=""><span class="vtag">Tacos</span></div>
+          <div class="vblock r-4-3"><img src="assets/asset_food_vessel.jpg" alt=""><span class="vtag">Tacos</span></div>
           <h4 style="margin-top:12px;">03 ／ TACOS</h4>
           <p style="font-size:12.5px;">和の素材が出会う、うつわとしてのトルティーヤ。</p>
         </div>
         <div>
-          <div class="vblock r-4-3"><img src="assets/asset_zine_wonderstock.jpg" alt=""><span class="vtag">Zine</span></div>
+          <div class="vblock r-4-3"><img src="assets/asset_zine_edit_bg.jpg" alt=""><span class="vtag">Zine</span></div>
           <h4 style="margin-top:12px;">04 ／ ZINE</h4>
           <p style="font-size:12.5px;">食材・器・お茶の背景を編集する小冊子。</p>
         </div>
@@ -685,7 +679,7 @@
           <p style="font-size:12.5px;">ソース・茶器・木皿・手ぬぐい。縁を持ち帰る道具。</p>
         </div>
         <div>
-          <div class="vblock r-4-3"><img src="assets/asset_counter_hands.jpg" alt=""><span class="vtag">Conversation</span></div>
+          <div class="vblock r-4-3"><img src="assets/asset_comm_staff.jpg" alt="" style="object-position:50% 38%;"><span class="vtag">Conversation</span></div>
           <h4 style="margin-top:12px;">06 ／ TALK</h4>
           <p style="font-size:12.5px;">カウンター越しのひと言。会話そのものが縁になる。</p>
         </div>
@@ -725,7 +719,7 @@
             </defs>
             <circle cx="230" cy="56" r="46" fill="#FFFFFF" stroke="#2A4434" stroke-width="1.5"/>
             <text x="230" y="54" text-anchor="middle" font-size="17" fill="#0F0F0F" font-family="Georgia" font-weight="500">kiCk</text>
-            <text x="230" y="74" text-anchor="middle" font-size="8.5" fill="#4A4A4A" letter-spacing="2.5">CREATIVE&#160;FORCE</text>
+            <text x="230" y="73" text-anchor="middle" font-size="7" fill="#4A4A4A" letter-spacing="1">CREATIVE&#160;FORCE</text>
             <line x1="230" y1="102" x2="230" y2="140" stroke="#7C7770" stroke-width="1" marker-end="url(#arr-a)"/>
             <rect x="140" y="148" width="180" height="60" fill="#F8F6F1" stroke="#C5C0B2" stroke-width="1" rx="2"/>
             <text x="230" y="178" text-anchor="middle" font-size="14" fill="#0F0F0F" letter-spacing="1.5">Content事業</text>
@@ -1629,7 +1623,7 @@
 
 <!-- ========== Bleed 05-06 ========== -->
 <div class="bleed">
-  <img src="assets/asset_zine_wonderstock.jpg" alt="">
+  <img src="assets/asset_zine_edit_bg.jpg" alt="">
   <span class="bleed-num">→ 06 Zine</span>
   <span class="bleed-tag">Zine</span>
   <div class="bleed-caption">縁を、編集する。</div>
@@ -1696,7 +1690,7 @@
     <p class="lead">店内で生まれた縁が、暮らしの中へ持ち帰られていく。<br>食卓・キッチン・身につけるもの・コラボもの。<span class="accent-text">店から、暮らしへ広がる縁</span>を設計する。</p>
 
     <!-- Goods grid -->
-    <div class="goods-grid" style="margin-top:36px;">
+    <div class="goods-grid" style="margin:36px 0 0;">
       <div class="gd gd-a"><img src="assets/asset_goods_sauce.jpg" alt=""><span class="gd-tag">Sauce ／ ソース</span></div>
       <div class="gd gd-b"><img src="assets/asset_goods_cup_pot.jpg" alt=""><span class="gd-tag">Teaware ／ 茶器</span></div>
       <div class="gd gd-c"><img src="assets/asset_goods_wood_plate.jpg" alt=""><span class="gd-tag">Wood Plate ／ 木皿</span></div>
@@ -1705,7 +1699,7 @@
       <div class="gd gd-f"><img src="assets/asset_goods_tenugui.jpg" alt=""><span class="gd-tag">Tenugui ／ 手ぬぐい</span></div>
       <div class="gd gd-g"><img src="assets/asset_goods_stickers.jpg" alt=""><span class="gd-tag">Sticker</span></div>
     </div>
-    <div class="goods-grid" style="margin-top:0;">
+    <div class="goods-grid" style="margin:10px 0 0;">
       <div class="gd gd-a"><img src="assets/asset_goods_tshirts.jpg" alt=""><span class="gd-tag">T-shirt</span></div>
       <div class="gd gd-b"><img src="assets/asset_goods_merch.jpg" alt=""><span class="gd-tag">Cap &amp; Tee</span></div>
       <div class="gd gd-c"><img src="assets/asset_goods_ware.jpg" alt=""><span class="gd-tag">Vessel</span></div>
@@ -1767,7 +1761,7 @@
     <div class="section-head"><span class="num">08</span><span class="en">Communication</span><span class="divider-line"></span></div>
 
     <div class="split img-wide">
-      <div class="vblock r-3-4"><img src="assets/asset_comm_staff.jpg" alt=""><span class="vtag">Across the Counter ／ 店員のひと言</span></div>
+      <div class="vblock r-1-1"><img src="assets/asset_comm_staff.jpg" alt="" style="object-position:50% 38%;"><span class="vtag">Across the Counter ／ 店員のひと言</span></div>
       <div>
         <h2 class="title">店員と、<br><span class="ink-mark">隣の人と。</span></h2>
         <p class="lead">食べ物や空間だけが体験ではない。<br>店員とのひと言、隣の客との会話、作り手の話を聞く時間も、すべてが「縁」になる。</p>
@@ -1801,7 +1795,7 @@
     <div style="margin-top:64px;">
       <p class="small-mute">8.2 — Customer × Customer ／ 客同士</p>
       <div class="split" style="margin-top:16px;">
-        <div class="vblock r-3-4"><img src="assets/asset_comm_lively.jpg" alt=""><span class="vtag">Lively Talk ／ 会話が盛り上がる夜</span></div>
+        <div class="vblock r-1-1"><img src="assets/asset_comm_lively.jpg" alt="" style="object-position:50% 42%;"><span class="vtag">Lively Talk ／ 会話が盛り上がる夜</span></div>
         <div>
           <h4>Triggers for Conversation</h4>
           <ul class="tidy">
