@@ -569,7 +569,12 @@
     .gd-a, .gd-b, .gd-c, .gd-d, .gd-e, .gd-f, .gd-g { grid-column: span 6; grid-row: span 2; }
   }
   @media (max-width: 600px) {
-    .grid-3, .grid-4, .grid-5, .grid-6, .modes, .material-grid { grid-template-columns: 1fr; }
+    .grid-3, .grid-4, .grid-5, .grid-6, .modes, .material-grid { grid-template-columns: 1fr !important; }
+    .split, .split.text-wide, .split.img-wide, .grid-2 { grid-template-columns: 1fr !important; }
+    .index-grid { grid-template-columns: 1fr !important; grid-auto-flow: row !important; grid-template-rows: auto !important; }
+    .index-item { grid-template-columns: 28px 1fr auto; gap: 10px; }
+    .index-item .ix-en { display: none; }
+    .issue { grid-column: auto !important; }
   }
 </style>
 </head>
